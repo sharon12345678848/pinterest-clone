@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+  <head>
+    <title>Pinterest Clone</title>
+    <link rel="stylesheet" href="css/index_page.css">
+    <link rel="icon" type="image/x-icon" href="Images/Pinterest-logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <a href="https://in.pinterest.com/">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2iZJppRYPIQxtUw1vDAJStnY4mHhx3a1fA&usqp=CAU" alt="Pinterest logo" >
+        </a>
+      </div>
+      <div class="icons">
+        <a href="https://help.pinterest.com/en-gb/guide/all-about-pinterest">
+          <p style="font-family: Arial, Helvetica, sans-serif;">
+            About
+          </p>
+        </a>
+        <a href="https://business.pinterest.com/en-gb/">
+          <p style="font-family: Arial, Helvetica, sans-serif;">
+            Business
+          </p>
+        </a>
+        <a href="https://newsroom.pinterest.com/en-gb">
+          <p style="font-family: Arial, Helvetica, sans-serif;">
+            Press
+          </p>
+        </a>
+        <a href="https://in.pinterest.com/#top" id="profile">
+          <img src="Images/profile.png" alt="Profile">
+          <span class="profile-name">
+            <p style="font-family: Arial, Helvetica, sans-serif;">
+              Login
+            </p>
+          </span>
+        </a>
+        <a href="https://in.pinterest.com/" id="profile">
+          <img src="Images/profile.png" alt="Profile">
+          <span class="profile-name">
+            <p style="font-family: Arial, Helvetica, sans-serif;">
+              SignUp
+            </p>
+          </span>
+        </a>
+      </div>
+    </div>
+    <!--
+        <div class="box">
+          <a href="second_page.html">
+          <img class="mySlides" src="Images/pic21.jpg">
+          <img class="mySlides" src="Images/pic22.jpg" >
+          <img class="mySlides" src="Images/pic23.jpg" >
+          <img class="mySlides" src="Images/pic24.jpg" >
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">
+            &#10094;
+          </button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">
+            &#10095;
+          </button>
+          </a>
+          <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) 
+              {
+                slideIndex = 1
+              }
+              if (n < 1) {
+                slideIndex = x.length
+              }
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+          <script>
+            var myIndex = 0;
+            carousel();
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {
+                myIndex = 1
+              }    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 3000);
+            }
+            </script>
+        </div>
+    -->
+        
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="Images/pic21.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Images/pic22.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Images/pic23.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+    <img src="Images/pic24.jpg" style="width:100%">
+  </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+    <footer class="footer1">
+      <center>
+        <p>Here’s how it works <a href='second_page.html'><i class="fa fa-angle-down" style="font-size:24px; font-style: 2px solid black;"></i></a></p>
+      </center>
+    </footer>
+    
+  </body>
+</html>

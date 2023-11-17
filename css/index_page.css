@@ -1,0 +1,124 @@
+body {
+  position: fixed;
+  top: 0; 
+  width: 100%; 
+  grid-template-rows: 60px auto;
+  grid-template-columns: 100%;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+.header {
+  border-bottom: 1px solid #f2f2f2;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 100px;
+  margin: 30px;
+}
+input {
+  height: 36px;
+  border-radius: 4px;
+  background-color: #efefef;
+  color: #757575;
+  border: 1px solid transparent;
+  font-size: 16px;
+  font-weight: bold;
+  flex-grow: 1;
+  margin: 20px;
+}
+.search-icon {
+  display: none;
+}
+
+.icons {
+  float: right;
+  display: flex;
+  align-items: center;
+  margin-left: 50%;
+}
+.icons img {
+  width: 25px;
+  margin: 20px;
+}
+.icons a {
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+  margin: 10px;
+  padding: 0px 3px;
+}
+.icons a:hover, .logo:hover {
+  background-color: #efefef;
+  border-radius: 20px;
+}
+#profile {
+  display: flex;
+  align-items: center;
+}
+.profile-name {
+  color:black;
+}
+.box{
+  object-fit: cover;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+
+}
+.footer1{
+  background-color: rgb(252, 230, 104);
+  position:fixed;
+  bottom: 0; 
+  width: 100%; 
+}
+.c1{
+  background-color: green;
+  height: 580px;
+}
+.one{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   background-color: pink;
+   padding: 0.5%;
+   margin-left: 38%;
+   width: 25%;
+   font-style: oblique;
+   font-size: 28px;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 2500px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
